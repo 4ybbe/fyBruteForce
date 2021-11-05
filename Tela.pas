@@ -140,7 +140,6 @@ begin
   end;
 
 
-  edtLogin.setText(Chave);
 
 
 
