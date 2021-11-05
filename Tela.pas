@@ -132,6 +132,14 @@ begin
   link := 'http://www.337.com/api.php?a=1002&username='+realLogin.Text+'&password='+ Chave +'&submit=login-btn';
   URLDownloadToFile(nil,pchar(link),pchar(destino),0,nil);
   slaMemo.Lines.LoadFromFile(destino);
+
+  if slaMemo.Text = '{"error":0,"msg":"ok"}' then begin
+    IWTimer1.Enabled := false;
+    edtLogin.Text := '';
+    edtLogin.Text := 'login com sucesso';
+  end;
+
+
   edtLogin.setText(Chave);
 
 

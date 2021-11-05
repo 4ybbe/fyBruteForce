@@ -1,0 +1,17 @@
+program fYBruteForce;
+
+{$R *.dres}
+
+uses
+  Forms,
+  IWStart,
+  UTF8ContentParser,
+  Tela in 'Tela.pas' {IWForm2: TIWAppForm},
+  ServerController in 'ServerController.pas' {IWServerController: TIWServerControllerBase},
+  UserSessionUnit in 'UserSessionUnit.pas' {IWUserSession: TIWUserSessionBase};
+
+{$R *.res}
+
+begin
+  TIWStart.Execute(True);
+end.
